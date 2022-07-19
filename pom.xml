@@ -109,6 +109,7 @@
                 <version>2.4.3</version>
                 <configuration>
                          <projectId>deloitte-cms</projectId>
+                         <version>alpha</version>
                          <deploy.stopPreviousVersion>true</deploy.stopPreviousVersion>
                 </configuration>
             </plugin>
