@@ -1,12 +1,3 @@
-FROM maven:3.6.3-jdk-8 as builder
-
-COPY . reactspr-example
-
-WORKDIR reactspr-example
-
-# Build a release artifact.
-RUN mvn clean install
-
 FROM gcr.io/google-appengine/openjdk
 
 # Copy the jar to the production image from the builder stage.
