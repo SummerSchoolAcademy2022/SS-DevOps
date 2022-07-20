@@ -1,5 +1,9 @@
 steps:
+<<<<<<< HEAD
 - name: 'gcr.io/cloud-builders/docker'
+=======
+- name: 'maven:3.6.3-jdk-8'
+>>>>>>> 3b6f06ad4c7982624cde2f3182f717f14dfe2f70
   dir: appengine
   args: [ 'build', '-t', 'europe-west2-docker.pkg.dev/$PROJECT_ID/ssa/spring-react:latest', '.' ]
 - name: 'gcr.io/cloud-builders/docker'
