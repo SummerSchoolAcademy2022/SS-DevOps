@@ -1,0 +1,6 @@
+runtime: custom
+env: flex
+threadsafe: true
+handlers:
+- url: /.*
+  script: this field is required, but ignored
