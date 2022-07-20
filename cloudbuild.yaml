@@ -1,7 +1,7 @@
 steps:
 - name: 'maven:3.6.3-jdk-8'
   entrypoint: 'bash'
-  args: ['-c', 'mvn install']
+  args: ['-c', 'cd appengine && mvn install']
 
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: 'bash'
