@@ -4,12 +4,18 @@ import './App.css';
 
 function App () {
     const [message, setMessage] = useState("");
+    const [items, setItems] = useState("");
 
     useEffect(() => {
         fetch('/api/hello')
             .then(response => response.text())
             .then(message => {
                 setMessage(message);
+            });
+        fetch('/api/items')
+            .then(response => response.text())
+            .then(items => {
+                setItems(items);
             });
     },[])
     return (
@@ -21,6 +27,7 @@ function App () {
         <p className="App-intro">
         To get started, edit <code>src/App.js</code> and save to reload.
     </p>
+    <p>Items found {items} </p>
     </div>
 )
 }
