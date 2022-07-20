@@ -1,10 +1,10 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   dir: appengine
-  args: [ 'build', '-t', 'europe-west2-docker.pkg.dev/$PROJECT_ID/ssa/spring-react:latest', '.' ]
+  args: [ 'build', '-t', 'europe-docker.pkg.dev/$PROJECT_ID/ssa/spring-react:latest', '.' ]
 - name: 'gcr.io/cloud-builders/docker'
   dir: appengine
-  args: [ 'push', 'europe-west2-docker.pkg.dev/$PROJECT_ID/ssa/spring-react:latest']
+  args: [ 'push', 'europe-docker.pkg.dev/$PROJECT_ID/ssa/spring-react:latest']
 - name: 'gcr.io/cloud-builders/gcloud'
   dir: appengine
-  args: [ 'app', 'deploy', '--image-url=europe-west2-docker.pkg.dev/$PROJECT_ID/ssa/spring-react:latest' ]
+  args: [ 'app', 'deploy', '--image-url=europe-docker.pkg.dev/$PROJECT_ID/ssa/spring-react:latest' ]
