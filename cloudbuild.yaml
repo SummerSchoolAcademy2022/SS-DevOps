@@ -1,4 +1,8 @@
 steps:
+- name: 'maven:3.6.3-jdk-8'
+  entrypoint: 'bash'
+  args: ['-c', 'mvn install']
+
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: 'bash'
   args: ['-c', 'gcloud init && gcloud config set account 925534035602@cloudbuild.gserviceaccount.com && gcloud config set app/cloud_build_timeout 1600 && cd appengine && gcloud app deploy']
