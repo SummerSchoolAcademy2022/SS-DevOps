@@ -1,7 +1,7 @@
 steps:
 - name: 'gcr.io/cloud-builders/mvn'
   dir: appengine
-  args: [ '--define', 'skipTests', 'package', 'appengine:stage' ]
+  args: ['package', 'appengine:stage' ]
 - id: 'Deploy to app engine'
   name: 'gcr.io/cloud-builders/gcloud'
   dir: appengine
