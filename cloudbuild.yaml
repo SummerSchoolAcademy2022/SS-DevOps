@@ -1,8 +1,10 @@
 steps:
-- name: 'maven:3.6.3-jdk-8'
+- name: 'gcr.io/cloud-builders/docker'
   dir: appengine
-  args: ['package', 'appengine:stage' ]
-- id: 'Deploy to app engine'
-  name: 'gcr.io/cloud-builders/gcloud'
+  args: [ 'build', '-t', 'europe-west2-docker.pkg.dev/$PROJECT_ID/ssa/spring-react:latest', '.' ]
+- name: 'gcr.io/cloud-builders/docker'
   dir: appengine
-  args: [ 'app', 'deploy', 'target/appengine-staging/app.yaml' ]
+  args: [ 'push', 'europe-west2-docker.pkg.dev/$PROJECT_ID/ssa/spring-react:latest']
+- name: 'gcr.io/cloud-builders/gcloud'
+  dir: appengine
+  args: [ 'app', 'deploy', '--image-url=europe-west2-docker.pkg.dev/$PROJECT_ID/ssa/spring-react:latest' ]
