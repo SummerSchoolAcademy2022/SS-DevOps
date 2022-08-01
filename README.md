@@ -51,10 +51,10 @@
 - **npm -v** 
 ![AnVIL Image](/_images/POMInstr.PNG "Pom NPM Example")
 
-7. **Ensure that the Dockerfile is edited with the correct output jar file, to test you application locally you will need to build the docker image and run it:** \
-- **docker build localspringapp .** \
-- **docker run --name test -d -p 8080:8080 localspringapp** \
-- **Open browser and navigate to localhost:8080** \
+7. **Ensure that the Dockerfile is edited with the correct output jar file, to test you application locally you will need to build the docker image and run it:** 
+- **docker build localspringapp .** 
+- **docker run --name test -d -p 8080:8080 localspringapp** 
+- **Open browser and navigate to localhost:8080** 
 ![AnVIL Image](/_images/POMJAR.PNG "Pom NPM Example") \
 ![AnVIL Image](/_images/DockerInstr.PNG "Pom NPM Example")
 
