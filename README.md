@@ -15,7 +15,7 @@
 - [ ] Adapt/Create the Dockerfile so your application name is used
 - [ ] Make sure that you expose the 8080 port when running your application locally
 - [ ] Push your repository into github
-- [ ] Create a Google Cloud Project
+- [ ] Navigate to your Cloud Project
 - [ ] Navigate to Cloud Run and create a new service usying the Continuosly deploy new revisions from a source repository
 - [ ] Link GCP with github account using the browser
 - [ ] Make sure to check allow all trafic and allow unauthenticated requests when creating the Cloud Run Service for this demo
