@@ -51,7 +51,10 @@
 - **npm -v** 
 ![AnVIL Image](/_images/POMInstr.PNG "Pom NPM Example")
 
-7. **Ensure that the Dockerfile is edited with the correct output jar file** \
+7. **Ensure that the Dockerfile is edited with the correct output jar file, to test you application locally you will need to build the docker image and run it:** \
+- **docker build localspringapp .** \
+- **docker run --name test -d -p 8080:8080 localspringapp** \
+- **Open browser and navigate to localhost:8080** \
 ![AnVIL Image](/_images/POMJAR.PNG "Pom NPM Example") \
 ![AnVIL Image](/_images/DockerInstr.PNG "Pom NPM Example")
 
@@ -79,7 +82,7 @@
 ![AnVIL Image](/_images/Step21.PNG "Step21") \
 ![AnVIL Image](/_images/Step23.PNG "Step23") 
 
-12.a **If you want to see your Cloud Build, you can type in the search bar Cloud Build and select the service. There you can check the status of your build (which in this case will be the Docker build) and also you can see and edit the trigger that in this case is set to start a build everytime a commit in master is made. ** \
+12.a **If you want to see your Cloud Build, you can type in the search bar Cloud Build and select the service. There you can check the status of your build (which in this case will be the Docker build) and also you can see and edit the trigger that in this case is set to start a build everytime a commit in master is made.** \
 ![AnVIL Image](/_images/Step24.PNG "Step24") \
 ![AnVIL Image](/_images/Step25.PNG "Step25") \
 ![AnVIL Image](/_images/Step26.PNG "Step26") \
