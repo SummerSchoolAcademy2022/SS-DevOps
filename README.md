@@ -26,71 +26,71 @@
 
 ### GCP Account creation
 
-1. Creating the Google Cloud Platform Account \
+1. **Creating the Google Cloud Platform Account** \
 ![AnVIL Image](/_images/Step1.PNG "Step1") \
 ![AnVIL Image](/_images/Step2.PNG "Step2") \
 ![AnVIL Image](/_images/Step3.PNG "Step3") \
 ![AnVIL Image](/_images/Step4.PNG "Step4") 
  
-2. Follow instructions and reach the Billing part \
+2. **Follow instructions and reach the Billing part** \
 ![AnVIL Image](/_images/Step5.PNG "Step5") 
 
 
-3. Enter basic informations and a valid card/virtual card (Revolut supported, but confirmation will be requested) \
+3. **Enter basic informations and a valid card/virtual card (Revolut supported, but confirmation will be requested)** \
 ![AnVIL Image](/_images/Step6.PNG "Step6") \
 ![AnVIL Image](/_images/Step7.PNG "Step7") 
 
-4. Select --, then web applications and others and Engineer/Developer or Student \
+4. **Select Learn about specific products, then web applications and others and Engineer/Developer or Student** \
 ![AnVIL Image](/_images/Step8.PNG "Step8") 
 
-5. Skip the market-palce solutions recommended \
+5. **Skip the market-palce solutions recommended** \
 ![AnVIL Image](/_images/Step9.PNG "Step9")
 
-6. Make sure that your pom.xml builds one single jar and includes the plugin for node build (for new plugin versions visit [this link](https://mvnrepository.com/artifact/com.github.eirslett/frontend-maven-plugin) ) and to check what node version you need, run the following commands in your terminal:
-- node -v 
-- npm -v 
+6. **Make sure that your pom.xml builds one single jar and includes the plugin for node build (for new plugin versions visit [this link](https://mvnrepository.com/artifact/com.github.eirslett/frontend-maven-plugin) ) and to check what node version you need, run the following commands in your terminal:**
+- **node -v** 
+- **npm -v** 
 ![AnVIL Image](/_images/POMInstr.PNG "Pom NPM Example")
 
-7. Ensure that the Dockerfile is edited with the correct output jar file \
+7. **Ensure that the Dockerfile is edited with the correct output jar file** \
 ![AnVIL Image](/_images/POMJAR.PNG "Pom NPM Example") \
 ![AnVIL Image](/_images/DockerInstr.PNG "Pom NPM Example")
 
-8. Next, go to the Google Cloud Console, to the Cloud Run service and follow the bellow instructions \
+8. **Next, go to the Google Cloud Console, to the Cloud Run service and follow the bellow instructions** \
 ![AnVIL Image](/_images/Step10.PNG "Step10") \
 ![AnVIL Image](/_images/Step11.PNG "Step11") \
 ![AnVIL Image](/_images/Step12.PNG "Step12") \
 ![AnVIL Image](/_images/Step13.PNG "Step13")
 
-9. Authenticate your Google Cloud Project to have access to your Github repository \
+9. **Authenticate your Google Cloud Project to have access to your Github repository** \
 ![AnVIL Image](/_images/Step14.PNG "Step14") \
 ![AnVIL Image](/_images/Step15.PNG "Step15") \
 ![AnVIL Image](/_images/Step16.PNG "Step16")
 
-10. Continue with the Cloud Run settup
+10. **Continue with the Cloud Run setup**
 ![AnVIL Image](/_images/Step17.PNG "Step17") \
 ![AnVIL Image](/_images/Step18.PNG "Step18") 
 
-11. Double-check all the selections and press create \
+11. **Double-check all the selections and press create** \
 ![AnVIL Image](/_images/Step19.PNG "Step19") \
 ![AnVIL Image](/_images/Step20.PNG "Step20") 
 
 
-12. Wait for the service to be fully operational \
+12. **Wait for the service to be fully operational** \
 ![AnVIL Image](/_images/Step21.PNG "Step21") \
 ![AnVIL Image](/_images/Step23.PNG "Step23") 
 
-12.a If you want to see your Cloud Build, you can type in the search bar Cloud Build and select the service. There you can check the status of your build (which in this case will be the Docker build) and also you can see and edit the trigger that in this case is set to start a build everytime a commit in master is made. 
+12.a **If you want to see your Cloud Build, you can type in the search bar Cloud Build and select the service. There you can check the status of your build (which in this case will be the Docker build) and also you can see and edit the trigger that in this case is set to start a build everytime a commit in master is made. ** \
 ![AnVIL Image](/_images/Step24.PNG "Step24") \
 ![AnVIL Image](/_images/Step25.PNG "Step25") \
 ![AnVIL Image](/_images/Step26.PNG "Step26") \
 ![AnVIL Image](/_images/Step27.PNG "Step27") \
 ![AnVIL Image](/_images/Step28.PNG "Step28") 
 
-13. Going back to Cloud Run, if the service is finished building we can test our solution clicking on the link of the service
+13. **Going back to Cloud Run, if the service is finished building we can test our solution clicking on the link of the service**
 ![AnVIL Image](/_images/Step29.PNG "Step29") \
 ![AnVIL Image](/_images/Step30.PNG "Step30") 
 
-14. After presenting the solution, in order to make sure no money will be required from the card or the project, proceed by deleting the Cloud Run and the Project Itself. (To delete the project, go to Cloud overview and access the Project settings)
+14. **After presenting the solution, in order to make sure no money will be required from the card or the project, proceed by deleting the Cloud Run and the Project Itself. (To delete the project, go to Cloud overview and access the Project settings)**
 ![AnVIL Image](/_images/Step31.PNG "Step31") \
 ![AnVIL Image](/_images/Step32.PNG "Step32") \
 ![AnVIL Image](/_images/Step33.PNG "Step33") \
